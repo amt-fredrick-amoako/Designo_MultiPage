@@ -1,0 +1,20 @@
+﻿@model Hero
+
+
+<div class="card">
+    <div class="card__hero">
+        <h1 class="card__title">@Model.Title</h1>
+        <p class="card__description">
+            @Model.Description
+        </p>
+        <form method="get" action="/src/Pages/contact.html">
+            <button type="submit" class="card__btn btn">Learn more</button>
+        </form>
+    </div>
+    <div class="mobile-div">
+        <img src="./assets/home/desktop/image-hero-phone.png" class="card__image" alt="">
+    </div>
+</div>
+
+
+
