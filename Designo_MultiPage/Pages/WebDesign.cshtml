@@ -4,13 +4,83 @@
 
 @{
     ViewData["Title"] = "Web Design";
-    Layout = "_PagesLayout";
+    ViewBag.FooterClass = "new__footer";
+    //Layout = "_PagesLayout";
 }
 <section class="card-section">
-    @await Component.InvokeAsync(nameof(Design), new { projects = Model.Projects })
+    <div class="container">
+        <div class="title-card">
+            <div class="center title-card__content">
+                <h1 class="white title-card__heading">Web Design</h1>
+                <p class="white title-card__description">
+                    We build websites that serve as powerful marketing tools<br class="none">
+                    and bring memorable brand experiences.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 
-@await Component.InvokeAsync(nameof(Project), new { projectImages = Model.projectImages })
+<section class="showcase">
+    <div class="container">
+        <div class="showcase__container">
+            <div class="showcase__item-1 showcase__card">
+                <img src="~/assets/web-design/desktop/image-express.jpg" class="showcase__image" alt="">
+                <div class="showcase__bottom-card center">
+                    <h4 class="showcase__title">Express</h4>
+                    <p class="showcase__description">
+                        A multi-carrier shipping website for<br> ecommerce businesses
+                    </p>
+                </div>
+            </div>
+            <div class="showcase__item-2 showcase__card">
+                <img src="~/assets/web-design/desktop/image-transfer.jpg" class="showcase__image" alt="">
+                <div class="showcase__bottom-card center">
+                    <h4 class="showcase__title"> Transfer</h4>
+                    <p class="showcase__description">
+                        Site for low-cost money transfers and<br> sending money within seconds
+                    </p>
+                </div>
+            </div>
+            <div class="showcase__item-3 showcase__card">
+                <img src="~/assets/web-design/desktop/image-photon.jpg" class="showcase__image" alt="">
+                <div class="showcase__bottom-card center">
+                    <h4 class="showcase__title">Photon</h4>
+                    <p class="showcase__description">
+                        A state-of-the-art music player with<br> high-resolution audio and DSP effects
+                    </p>
+                </div>
+            </div>
+            <div class="showcase__item-4 showcase__card">
+                <img src="~/assets/web-design/desktop/image-builder.jpg" class="showcase__image" alt="">
+                <div class="showcase__bottom-card center">
+                    <h4 class="showcase__title">Builder</h4>
+                    <p class="showcase__description">
+                        Connects users with local contractors<br> based on their location
+                    </p>
+                </div>
+            </div>
+            <div class="showcase__item-5 showcase__card">
+                <img src="~/assets/web-design/desktop/image-blogr.jpg" class="showcase__image" alt="">
+                <div class="showcase__bottom-card center showcase__card-padding">
+                    <h4 class="showcase__title">Blogr</h4>
+                    <p class="showcase__description">
+                        Blogr is a platform for creating an online<br> blog or publication
+                    </p>
+                </div>
+            </div>
+            <div class="showcase__item-6 showcase__card">
+                <img src="~/assets/web-design/desktop/image-camp.jpg" class="showcase__image" alt="">
+                <div class="showcase__bottom-card center">
+                    <h4 class="showcase__title">Camp</h4>
+                    <p class="showcase__description">
+                        Get expert training in coding, data,<br> design, and digital marketing
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <section>
@@ -22,12 +92,11 @@
                     <div class="projects__overlay--dark projects__overlay--small projects__overlay--peach"></div>
                     <div class="projects__textbox projects__textbox-app">
                         <h1 class="projects__title mobile-title">
-                            App Design
-                        </h1>
-                        <p class="projects__description">
-                            View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg "
-                                               class="projects__arrow" alt="">
-                        </p>
+                            App Design</h1>
+                            <p class="projects__description">
+                                View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg "
+                                                   class="projects__arrow" alt="">
+                            </p>
                     </div>
                 </a>
 
@@ -38,12 +107,11 @@
                     <div class="projects__overlay--dark projects__overlay--small projects__overlay--peach"></div>
                     <div class="projects__textbox projects__textbox-graphic">
                         <h1 class="projects__title mobile-title">
-                            Graphic Design
-                        </h1>
-                        <p class="projects__description">
-                            View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg"
-                                               class="projects__arrow" alt="">
-                        </p>
+                            Graphic Design</h1>
+                            <p class="projects__description">
+                                View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg"
+                                                   class="projects__arrow" alt="">
+                            </p>
                     </div>
                 </a>
 
@@ -53,8 +121,32 @@
 </section>
 
 <section>
-    @await Component.InvokeAsync(nameof(Contact));
+    <div class="container">
+        <div class="mobile-div mobile-div-web">
+            <div class="contact-box contact-box-web contact-box-web-mobile">
+                <div class="contact__textbox">
+                    <h1 class="contact__title">Let’s talk about your project</h1>
+                    <p class="contact__description">
+                        Ready to take it to the next level? Contact us today and find out how our
+                        expertise can help your business grow.
+                    </p>
+
+                </div>
+                <div>
+                    <form method="get" action="/contact-us">
+                        <button type="submit" class="contact__btn btn">Get in touch</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+
+
+
+
+
 
 
 

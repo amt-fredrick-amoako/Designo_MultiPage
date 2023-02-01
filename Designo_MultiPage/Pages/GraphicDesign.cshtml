@@ -2,7 +2,8 @@
 @model Designo_MultiPage.Pages.GraphicDesignModel
 @{
     ViewData["Title"] = "Graphic Design";
-    Layout = "_PagesLayout";
+    ViewBag.FooterClass = "new__footer";
+    //Layout = "_PagesLayout";
 
 }
 
@@ -18,100 +19,100 @@
             </div>
         </div>
     </div>
+</section>
 
-
-    <section class="showcase">
-        <div class="container">
-            <div class="showcase__container-x3">
-                <div class="showcase__item-1 showcase__card">
-                    <img src="~/assets/graphic-design/desktop/image-change.jpg" class="showcase__image" alt="change">
-                    <div class="showcase__bottom-card center">
-                        <h4 class="showcase__title">Airfilter</h4>
-                        <p class="showcase__description">
-                            Solving the problem of poor indoor air<br> quality by filtering the air
-                        </p>
-                    </div>
+<section class="showcase">
+    <div class="container">
+        <div class="showcase__container-x3">
+            <div class="showcase__item-1 showcase__card">
+                <img src="~/assets/graphic-design/desktop/image-change.jpg" class="showcase__image" alt="change">
+                <div class="showcase__bottom-card center">
+                    <h4 class="showcase__title">Airfilter</h4>
+                    <p class="showcase__description">
+                        Solving the problem of poor indoor air<br> quality by filtering the air
+                    </p>
                 </div>
-                <div class="showcase__item-2 showcase__card">
-                    <img src="~/assets/graphic-design/desktop/image-boxed-water.jpg" class="showcase__image" alt="boxed-water">
-                    <div class="showcase__bottom-card center">
-                        <h4 class="showcase__title"> Eyecam</h4>
-                        <p class="showcase__description">
-                            Product that lets you edit your favorite<br> photos and videos at any time
-                        </p>
-                    </div>
+            </div>
+            <div class="showcase__item-2 showcase__card">
+                <img src="~/assets/graphic-design/desktop/image-boxed-water.jpg" class="showcase__image" alt="boxed-water">
+                <div class="showcase__bottom-card center">
+                    <h4 class="showcase__title"> Eyecam</h4>
+                    <p class="showcase__description">
+                        Product that lets you edit your favorite<br> photos and videos at any time
+                    </p>
                 </div>
-                <div class="showcase__item-3 showcase__card">
-                    <img src="~/assets/graphic-design/desktop/image-science.jpg" class="showcase__image" alt="science">
-                    <div class="showcase__bottom-card center">
-                        <h4 class="showcase__title">Faceit</h4>
-                        <p class="showcase__description">
-                            Get to meet your favorite internet<br> superstar with the faceit app
-                        </p>
-                    </div>
+            </div>
+            <div class="showcase__item-3 showcase__card">
+                <img src="~/assets/graphic-design/desktop/image-science.jpg" class="showcase__image" alt="science">
+                <div class="showcase__bottom-card center">
+                    <h4 class="showcase__title">Faceit</h4>
+                    <p class="showcase__description">
+                        Get to meet your favorite internet<br> superstar with the faceit app
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <div class="container">
-            <div class="flex projects__two-card">
-                <div class="app-design__projects  app-design__image projects__image-div margin-bottom-24px">
-                    <a asp-page="AppDesign">
-                        <img src="~/assets/home/desktop/image-app-design.jpg" class="projects__image " alt="">
-                        <div class="projects__overlay--dark projects__overlay--small projects__overlay--peach"></div>
-                        <div class="projects__textbox projects__textbox-app">
-                            <h1 class="projects__title mobile-title">
-                                App Design
-                            </h1>
+<section>
+    <div class="container">
+        <div class="flex projects__two-card">
+            <div class="app-design__projects  app-design__image projects__image-div margin-bottom-24px">
+                <a asp-page="AppDesign">
+                    <img src="~/assets/home/desktop/image-app-design.jpg" class="projects__image " alt="">
+                    <div class="projects__overlay--dark projects__overlay--small projects__overlay--peach"></div>
+                    <div class="projects__textbox projects__textbox-app">
+                        <h1 class="projects__title mobile-title">
+                            App Design</h1>
                             <p class="projects__description">
                                 View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg " class="projects__arrow" alt="">
                             </p>
-                        </div>
-                    </a>
+                    </div>
+                </a>
 
 
-                </div>
-                <div class="web-design__projects web-design__image projects__image-div margin-left-30">
-                    <a asp-page="WebDesign">
-                        <img src="~/assets/home/desktop/image-web-design-small.jpg" class="projects__image " alt="">
-                        <div class="projects__overlay--dark projects__overlay--small projects__overlay--peach"></div>
-                        <div class="projects__textbox projects__textbox-web-small">
-                            <h1 class="projects__title mobile-title">Web Design</h1>
-                            <p class="projects__description">
-                                View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg "
-                                                   class="projects__arrow" alt="">
-                            </p>
-                        </div>
-                    </a>
-                </div>
             </div>
-        </div>
-    </section>
-
-
-    <section>
-        <div class="container">
-            <div class="mobile-div mobile-div-web">
-                <div class="contact-box contact-box-graphic">
-                    <div class="contact__textbox">
-                        <h2 class="contact__title">Let’s talk about your project</h2>
-                        <p class="contact__description">
-                            Ready to take it to the next level? Contact us today and find out how
-                            our
-                            expertise can help your business grow.
+            <div class="web-design__projects web-design__image projects__image-div margin-left-30">
+                <a asp-page="WebDesign">
+                    <img src="~/assets/home/desktop/image-web-design-small.jpg" class="projects__image " alt="">
+                    <div class="projects__overlay--dark projects__overlay--small projects__overlay--peach"></div>
+                    <div class="projects__textbox projects__textbox-web-small">
+                        <h1 class="projects__title mobile-title">Web Design</h1>
+                        <p class="projects__description">
+                            View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg "
+                                               class="projects__arrow" alt="">
                         </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-                    </div>
-                    <div>
-                        <form method="get" action="/contact-us">
-                            <button type="submit" class="contact__btn btn">Get in touch</button>
-                        </form>
-                    </div>
+
+<section>
+    <div class="container">
+        <div class="mobile-div mobile-div-web">
+            <div class="contact-box contact-box-graphic">
+                <div class="contact__textbox">
+                    <h2 class="contact__title">Let’s talk about your project</h2>
+                    <p class="contact__description">
+                        Ready to take it to the next level? Contact us today and find out how
+                        our
+                        expertise can help your business grow.
+                    </p>
+
+                </div>
+                <div>
+                    <form method="get" action="/contact-us">
+                        <button type="submit" class="contact__btn btn">Get in touch</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
 </section>
+
+
+

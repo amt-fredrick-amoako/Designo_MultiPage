@@ -2,25 +2,85 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-
+    ViewBag.FooterClass = "";
 }
 
-<section class="section__card">
+<body>
 
-    <div class="container">
+    
+    <section class="section__card">
+        <div class="container">
+            <div class="card">
+                <div class="card__hero">
+                    <h1 class="card__title">Award-winning custom designs and digital branding solutions</h1>
+                    <p class="card__description">
+                        With over 10 years in the industry, we are experienced in creating fully
+                        responsive
+                        websites, app design,
+                        and engaging brand experiences. Find out more about our services.
+                    </p>
+                    <form method="get" action="/contact-us">
+                        <button type="submit" class="card__btn btn">Learn more</button>
+                    </form>
+                </div>
+                <div class="mobile-div">
+                    <img src="~/assets/home/desktop/image-hero-phone.png" class="card__image" alt="">
+                </div>
+            </div>
 
-        @await Html.PartialAsync("_Hero", Model.Hero)
 
-        @await Html.PartialAsync("_Projects")
+            <div class="grid__container">
+                <div class="web-design__projects web-design__image projects__image-div">
+                    <a asp-page="WebDesign">
+                        <img src="./assets/home/desktop/image-web-design-large.jpg" class="projects__image" alt="">
+                        <div class="projects__overlay--dark projects__overlay--peach"></div>
+                        <div class="projects__textbox projects__textbox-web">
+                            <h1 class="projects__title mobile-title ">Web Design</h1>
+                            <p class="projects__description">
+                                View Projects <img src="./assets/shared/desktop/icon-right-arrow.svg"
+                                                   class="projects__arrow" alt="">
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="app-design__projects  app-design__image projects__image-div margin-top-12">
+                   <a asp-page="AppDesign">
+                        <img src="./assets/home/desktop/image-app-design.jpg" class="projects__image " alt="">
+                        <div class="projects__overlay--dark projects__overlay--small projects__overlay--peach"></div>
+                        <div class="projects__textbox projects__textbox-app">
+                            <h1 class="projects__title mobile-title">App Design</h1>
+                            <p class="projects__description">
+                                View Projects <img src="~/assets/shared/desktop/icon-right-arrow.svg "
+                                                   class="projects__arrow" alt="">
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-    </div>
+                <div class="graphic-design__projects graphic-design__image projects__image-div">
+                    <a asp-page="GraphicDesign">
+                        <img src="./assets/home/desktop/image-graphic-design.jpg" class="projects__image" alt="">
+                        <div class="projects__overlay--dark projects__overlay--small projects__overlay--peach"></div>
+                        <div class="projects__textbox projects__textbox-graphic">
+                            <h1 class="projects__title mobile-title">
+                                Graphic Design</h1>
+                                <p class="projects__description">
+                                    View Projects <img src="~/assets/shared/desktop/icon-right-arrow.svg"
+                                                       class="projects__arrow" alt="">
+                                </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="section__skills">
         <div class="container">
             <div class="flex-row flex-column skills">
                 <div class="gap skills__card">
                     <div>
-                        <img src="/assets/home/desktop/illustration-passionate.svg" class="skills__img" alt="" />
+                        <img src="~/assets/home/desktop/illustration-passionate.svg" class="skills__img" alt="" />
                     </div>
                     <div class="skills__textbox">
                         <h3 class="skills__title">Passionate</h3>
@@ -35,7 +95,7 @@
 
                 <div class="gap skills__card">
                     <div>
-                        <img src="/assets/home/desktop/illustration-resourceful.svg" class="skills__img" alt="" />
+                        <img src="~/assets/home/desktop/illustration-resourceful.svg" class="skills__img" alt="" />
                     </div>
 
                     <div class="skills__textbox">
@@ -52,7 +112,7 @@
 
                 <div class="skills__card">
                     <div>
-                        <img src="/assets/home/desktop/illustration-friendly.svg" class="skills__img" alt="" />
+                        <img src="~/assets/home/desktop/illustration-friendly.svg" class="skills__img" alt="" />
                     </div>
                     <div class="skills__textbox">
                         <h3 class="skills__title">Friendly</h3>
@@ -71,7 +131,30 @@
     </section>
 
     <section>
-        @await Component.InvokeAsync(nameof(Contact));
+        <div class="container">
+            <div class="mobile-div">
+                <div class="contact-box">
+                    <div class="contact__textbox">
+                        <h1 class="contact__title">Let’s talk about your project</h1>
+                        <p class="contact__description">
+                            Ready to take it to the next level? Contact us today and find out how our
+                            expertise can help your business grow.
+                        </p>
+
+                    </div>
+                    <div>
+
+                        <form method="get" action="/contact-us">
+                            <button type="submit" class="contact__btn btn">Get in touch</button>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-</section>
+
+    
+</body>
