@@ -392,6 +392,11 @@ footer {
     line-height: 14px;
 }
 
+.footer__icons-box {
+    margin-top: 0px;
+    align-self: end;
+}
+
 .footer__links {
     color: #fff;
     margin-left: 42px;
@@ -1155,6 +1160,11 @@ textarea {
         height: 78px;
         margin: 0px;
         padding: 0px;
+    }
+
+    .footer__icons-box {
+        margin-top: 0px;
+        align-self: end;
     }
 
     .title-card {
