@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
 
-
-
 :root {
     --peach: hsl(11, 73%, 66%);
     --light-peach: hsl(11, 100%, 80%);
@@ -898,7 +896,7 @@ textarea {
     width: 100%;
 }
 
-    input::placeholder {
+    input:placeholder {
         color: #fff;
         color: #ffffff;
         margin-left: 20px;

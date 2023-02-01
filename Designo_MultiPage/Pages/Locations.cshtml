@@ -2,8 +2,10 @@
 @model Designo_MultiPage.Pages.LocationsModel
 @{
     ViewData["Title"] = "Locations";
-    Layout = "_PagesLayout";
+    ViewBag.FooterClass = "new__footer";
+    //Layout = "_PagesLayout";
 }
+
 
 <section class="map-section">
     <div class="container">
@@ -102,13 +104,19 @@
                     </p>
                 </div>
                 <div>
-                    <form method="get" action="/contact-us">
-                        <button type="submit" class="contact__btn btn">Get in touch</button>
-                    </form>
+                    <a href='/src/Pages/contact.html'>
+                        <button class="contact__btn btn">
+                            Get in touch
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+
+
 
 

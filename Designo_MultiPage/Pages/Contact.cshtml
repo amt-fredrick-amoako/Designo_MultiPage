@@ -3,6 +3,7 @@
 @model Designo_MultiPage.Pages.ContactModel
 @{
     ViewData["Title"] = "Contact Us";
+    ViewBag.FooterClass = "footer__contact-page";
 }
 
 <section class="contact-section">
@@ -54,7 +55,7 @@
             <div class="  location__card">
                 <img src="/assets/shared/desktop/illustration-canada.svg" class="skills__img location__image" alt="" />
                 <h3 class="skills__title location__title">Canada</h3>
-                <form method="get" action="/locations">
+                <form method="get" action="/src/Pages/locations.html">
                     <button type="submit" class="btn btn-peach">see location</button>
                 </form>
             </div>
@@ -62,7 +63,7 @@
             <div class=" location__card">
                 <img src="/assets/shared/desktop/illustration-australia.svg" class="skills__img location__image" alt="" />
                 <h3 class="skills__title location__title">australia</h3>
-                <form method="get" action="/locations">
+                <form method="get" action="/src/Pages/locations.html">
                     <button type="submit" class="btn btn-peach">see location</button>
                 </form>
             </div>
@@ -71,7 +72,7 @@
                 <img src="/assets/shared/desktop/illustration-united-kingdom.svg" class="skills__img location__image"
                      alt="" />
                 <h3 class="skills__title location__title">united kingdom</h3>
-                <form method="get" action="/locations">
+                <form method="get" action="/src/Pages/locations.html">
                     <button type="submit" class="btn btn-peach">see location</button>
                 </form>
             </div>
@@ -79,3 +80,5 @@
 
     </div>
 </section>
+
+

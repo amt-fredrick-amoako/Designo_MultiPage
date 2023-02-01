@@ -2,8 +2,10 @@
 @model Designo_MultiPage.Pages.AboutModel
 @{
     ViewData["Title"] = "About Us";
-    Layout = "_PagesLayout";
+    ViewBag.FooterClass = "new__footer";
+    //Layout = "_PagesLayout";
 }
+
 
 <section class="section__card">
     <div class="container">
@@ -22,7 +24,7 @@
             </div>
 
             <div class="about__image-div tablet-image">
-                <img src="/assets/about/desktop/image-about-hero.jpg" alt="" class="about__image">
+                <img src="~/assets/about/desktop/image-about-hero.jpg" alt="" class="about__image">
                 <div class="about__image-display"></div>
             </div>
         </div>
@@ -57,6 +59,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 <section>
@@ -118,10 +121,11 @@
                 </div>
             </div>
             <div class="realdeal__image-div tablet-image">
-                <img src="/assets/about/desktop/image-real-deal.jpg" alt="" class=" realdeal__image">
+                <img src="~/assets/about/desktop/image-real-deal.jpg" alt="" class=" realdeal__image">
             </div>
         </div>
     </div>
+    
 </section>
 
 
@@ -138,7 +142,7 @@
                     </p>
                 </div>
                 <div>
-                    <form method="get" action="/contact-us">
+                    <form method="get" action="/src/Pages/contact.html">
                         <button type="submit" class="contact__btn btn">Get in touch</button>
                     </form>
                 </div>
