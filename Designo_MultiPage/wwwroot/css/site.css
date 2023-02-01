@@ -1907,6 +1907,7 @@ textarea {
 
     .footer__icons-box {
         margin-top: 42px;
+        align-self: center;
     }
 
     .tablet-image {
