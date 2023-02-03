@@ -21,7 +21,7 @@ namespace Designo_MultiPage.Pages
         {
             Hero = new()
             {
-                Title = "award-winning custom designs and digital branding solutions",
+                Title = "Award-winning custom designs and digital branding solutions",
                 Description = "with over 10 years in the industry, we are experienced in\r\n creating fully responsive websites, app design, and engaging\r\n brand experiences. find out more about our services",
                 ImageSrc = "/images/image-hero-phone.png"
             };

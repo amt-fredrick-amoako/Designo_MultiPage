@@ -1,5 +1,4 @@
 using Designo_MultiPage.Model;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Designo_MultiPage.Pages
@@ -17,7 +16,7 @@ namespace Designo_MultiPage.Pages
             Projects = new Projects
             {
                 Title = "web design",
-                Description = "We build websites that serve as powerful marketing tools \n and bring memorable brand experiences."
+                Description = "We build websites that serve as powerful marketing tools " + Environment.NewLine + " and bring memorable brand experiences."
             };
 
             projectImages = new ProjectImages[]

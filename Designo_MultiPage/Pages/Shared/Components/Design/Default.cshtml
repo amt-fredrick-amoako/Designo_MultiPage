@@ -2,13 +2,16 @@
 
 
 
-<div class="container">
-    <div class="title-card">
-        <div class="center title-card__content">
-            <h1 class="white title-card__heading">@Model.Title</h1>
-            <p class="white title-card__description">
-                @Model.Description
-            </p>
+<section class="card-section">
+    <div class="container">
+        <div class="title-card">
+            <div class="center title-card__content">
+                <h1 class="white title-card__heading">@Model.Title</h1>
+                <p class="white title-card__description">
+                    @Html.Raw(Model.Description)
+                </p>
+            </div>
         </div>
     </div>
-</div>
+</section>
+
