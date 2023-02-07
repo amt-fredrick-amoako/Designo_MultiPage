@@ -1481,7 +1481,7 @@ textarea {
     }
 
     .container {
-        width: 89%;
+        width: 100%;
         max-width: none;
     }
 
@@ -1617,7 +1617,7 @@ textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 15px;
+        border-radius: 0px;
     }
 
     .card__hero {
